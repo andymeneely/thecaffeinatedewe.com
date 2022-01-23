@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" 
           integrity="sha512-rQgMaFKZKIoTKfYInSVMH1dSM68mmPYshaohG8pK17b+guRbSiMl9dDbd3Sd96voXZeGerRIFFr2ewIiusEUgg==" 
@@ -14,9 +15,11 @@
         p { 
           text-align: center; 
         }
-        .logo { 
+
+        .logo { /* Most devices */
           width: 35%; 
         }
+        
         a {
           padding: 0.5em;
           color: inherit;
@@ -24,8 +27,16 @@
         }
         i { 
           font-style: normal;
-          font-size: 3em;
+          font-size: 4em;
          
+        }
+        @media screen and (max-width: 1000px) {
+          .logo { /* mobile, usually portrait */
+            width: 100%
+          }
+          a {
+            padding: 1em;
+          }
         }
       </style>
       <!-- Global site tag (gtag.js) - Google Analytics -->
